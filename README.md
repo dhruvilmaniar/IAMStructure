@@ -1,6 +1,6 @@
 # Object Detection Module
 
-**Notes:**
+**Note:**
 * This exe is produced under development mode, not release mode.
 * High End GPU is **required** to run all the modules efficiently.
 
@@ -97,3 +97,5 @@ latitude, longitude, altitude, roll, pitch, yaw, timestamp.
 *   Solve GUI not responding during heavy backend processes.
 *   Test Updated Telemetry module
 *   Add vehicle type classifier (Dataset needed.)
+
+**Distance (& other parameters) based classification of assets (normal, abnormal, suspicious) : The development part is complete. We have tested it on custom local area dataset. Only some formatting has to be done according to the database for the actual area.**
