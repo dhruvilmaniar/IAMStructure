@@ -1,5 +1,9 @@
 # Object Detection Module
 
+**Notes:**
+* This exe is produced under development mode, not release mode.
+* High End GPU is **required** to run all the modules efficiently.
+
 The ObjectDetection.exe file will perform :
 - Human Detection & Coordinates Extraction
 - Vehicle Detection & Coordinates Extraction
@@ -57,6 +61,15 @@ In case of video input, an Temp folder will be created automatically.
 **Database Structure:**
 
 References for Change Detection are stored in the database. (Only useful for the IAM module.)
+
+
+**Telemetry:**
+
+Currently, the application extracts the telemetry data from image exif.
+
+A seperate telemetry file input is also possible.
+
+After processing, the application saves the data back in image exif, along with detected data in csv and kml files.
 
 
 # Usage:
