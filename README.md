@@ -71,6 +71,16 @@ A seperate telemetry file input is also possible.
 
 After processing, the application saves the data back in image exif, along with detected data in csv and kml files.
 
+**Telemetry I/O Format:**
+
+Telemetry is expected in the 'UserComment' section of exif data, along with the following params:
+paramList = ['Baro_Altitude', 'Heading', 'Mode_Of_Operation', 'Accelerometer_Data', 'Ground_Speed',
+		 'True_AirSpeed', 'Outside_Air_Temperature', 'Pressure', 'Battery_Status', 'Fuel_Status', 'Primary_Camera',
+		 'Secondary_Camera1', 'Secondary_Camera2', 'Secondary_Camera3', 'Operator_Name', 'Launch_Point', 'ADS-B_Data',
+		 'Type_Of_Platform']
+
+However, most of them are less usefull to us, we only consider the following:
+latitude, longitude, altitude, roll, pitch, yaw, timestamp.
 
 # Usage:
 
